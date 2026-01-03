@@ -1,0 +1,52 @@
+.filters {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: var(--space-6);
+}
+
+.toggleGroup {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-end;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-5);
+}
+
+.vehicleCard h3 {
+  margin: 0 0 var(--space-1);
+}
+
+.vehicleCard p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  color: var(--color-text-muted);
+  margin: var(--space-4) 0;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}

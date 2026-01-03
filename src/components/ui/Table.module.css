@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+}
+
+th,
+td {
+  text-align: left;
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+th {
+  color: var(--color-text-muted);
+  font-weight: var(--font-weight-semibold);
+}
+
+tr:hover td {
+  background: var(--color-surface-muted);
+}
+
+.empty {
+  text-align: center;
+  color: var(--color-text-subtle);
+  padding: var(--space-6);
+}
+
+@media (max-width: 700px) {
+  .table {
+    min-width: 520px;
+  }
+}
